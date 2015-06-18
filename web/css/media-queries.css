@@ -1,0 +1,91 @@
+@media screen and (max-width: 1000px){
+#site {
+	min-width: 760px;
+}
+
+.fixed {
+    width: 98%;
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+.global_nav ul li a, .utility_nav li a {
+    padding: 16px 10px 0 10px;
+    font-size: 16px;
+}
+
+.home-block-text {
+    margin-left: 0;
+}
+
+.pictures {
+	background-size: 55% auto;
+    width: 98%;
+    left: 0;
+    margin-left: 0;
+}
+
+.categories li .categories-pic {
+    height: 180px;
+    width: 180px;
+}
+
+.categories li .categories-pic img {
+    width: 100%;
+    height: auto;
+}
+
+.social a {
+    margin: 0 20px;
+}
+
+.config-panel {
+    margin-right: 8px;
+}
+
+.select-size ul, .select-quantity ul {
+    margin-left: 3%;
+}
+
+.select-quantity ul li, .select-quantity ul li label {
+    font-size: 13px;
+}
+
+.quantity-price span {
+    font-size: 11px;
+}
+
+.select-quantity ul li label {
+    width: 18%;
+}
+
+.quantity-price {
+    width: 30%;
+}
+
+.savings {
+    font-size: 11px;
+}
+
+.cart-tovar {
+    float: none;
+    width: 90%;
+    margin: 30px 5%;
+}
+
+.price-block {
+    float: none;
+    margin: 50px auto;
+}
+
+.right {
+    margin: 30px;
+}
+
+.only-big {
+    display: none;
+}
+
+}

@@ -1,0 +1,918 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: "AgoraSansProLight";
+    src: url("../fonts/AgoraSansProLight/AgoraSansProLight.eot");
+    src: url("../fonts/AgoraSansProLight/AgoraSansProLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/AgoraSansProLight/AgoraSansProLight.woff") format("woff"),
+    url("../fonts/AgoraSansProLight/AgoraSansProLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Conv_pfdintextcondpro-regular';
+	src: url('../fonts/pfdintextcondpro-regular.eot');
+	src: local('O'), url('../fonts/pfdintextcondpro-regular.woff') format('woff'), 
+    url('../fonts/pfdintextcondpro-regular.ttf') format('truetype'), 
+    url('../fonts/pfdintextcondpro-regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'DINCondensedBold';
+    src: url('../fonts/DINCondensedBold.eot');
+    src: url('../fonts/DINCondensedBold.eot') format('embedded-opentype'),
+         url('../fonts/DINCondensedBold.woff2') format('woff2'),
+         url('../fonts/DINCondensedBold.woff') format('woff'),
+         url('../fonts/DINCondensedBold.ttf') format('truetype'),
+         url('../fonts/DINCondensedBold.svg#DINCondensedBold') format('svg');
+}
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, cite, code, del, dfn, em, font, img, ins, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+
+:focus {
+	outline: 0;
+}
+
+ol, ul {
+	list-style-position: inside;
+}
+
+a {
+	color: #525252;
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+html, body { 
+	height: 100%;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+     display: block;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+body {
+	font-family: 'Arial';
+	font-size: 14px;
+	color: #525252;
+	line-height: 130%;
+	background: #fff;
+}
+
+#site {
+	min-height: 100%;
+	background: #f1f1f1;
+	position: relative;
+    overflow: hidden;
+}	
+
+#container {
+	padding-bottom: 138px;
+}
+
+.header {
+	height: 52px;
+    background: #fccc26;
+	position: relative;
+    z-index: 10;
+    margin-bottom: 85px;
+}
+
+.fixed {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.logo {
+	float: left;
+    font:bold 32px/130% 'DINCondensedBold', sans-serif;
+	color:#000;
+    text-decoration: none;
+    padding-left: 138px;
+    margin: 6px 30px 0 0;
+    position: relative;
+}
+
+.logo:before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 2px;
+    width: 132px;
+    height: 128px;
+    background:url("../images/logo.png") no-repeat 0 0;
+}
+
+.global_nav {
+    float: left;
+}
+
+.global_nav ul {
+    list-style-position: outside;
+	list-style: none;
+}
+
+.global_nav ul li, .utility_nav li {
+    float: left;
+}
+
+.global_nav ul li a, .utility_nav li a {
+    display: inline-block;
+    zoom: 1;
+	*display: inline;
+	padding: 16px 15px 0 15px;
+    height: 36px;
+    font: 17px/130% 'Conv_pfdintextcondpro-regular', sans-serif;
+	color:#000;
+    text-decoration: none;
+}
+
+.global_nav ul li a:hover, .utility_nav li a:hover {
+    background: rgba(0,0,0, 0.2);
+}
+
+.utility_nav {
+    float: right;
+}
+
+.utility_nav  {
+    list-style-position: outside;
+	list-style: none;
+}
+
+.utility_nav .nav_cart a:before {
+    content: "";
+    display: inline-block;
+    zoom: 1;
+	*display: inline;
+	width: 23px;
+    height: 19px;
+    background: url("../images/sprite_1.png") no-repeat 0 0;
+    vertical-align: middle;
+}
+
+.home-block {
+    margin-top: -85px;
+    background: #fff;
+    padding-top: 135px;
+    min-height: 275px;
+    position: relative;
+}
+
+.pictures {
+    background: url("../images/pictures.png") no-repeat right bottom;
+    background-size: 61% auto;
+    position: absolute;
+    left: -480px;
+    margin-left: 50%;
+    bottom: 0;
+    top: 0;
+    width: 960px;
+}
+
+.home-block-text {
+    margin-left: -15px;
+    position: relative;
+    z-index: 5;
+}
+
+.gen-title {
+    margin-bottom: 20px;
+    font: 37px/110% 'Conv_pfdintextcondpro-regular', sans-serif;
+	color:#000;
+    text-transform: uppercase;
+}
+
+.gen-title span {
+    display: block;
+    font:25px/110% "AgoraSansProLight", sans-serif;
+	color:#000;
+    text-transform: none;
+}
+
+.order, .text .order {
+    display: inline-block;
+    zoom: 1;
+	*display: inline;
+    min-width: 200px;
+    height: 52px;
+    padding: 8px 25px 0 25px;
+    border-top: 2px solid #5edddc;
+    background: #1ed0ce;
+    border-radius: 16px;
+    text-align: center;
+    font: 33px/130% 'Conv_pfdintextcondpro-regular', sans-serif;
+	color:#fff;
+    text-decoration: none;
+    margin: 20px 0;
+}
+
+.order:hover {
+    background: #3bd4d2;
+}
+
+.block {
+    padding: 60px 0;
+}
+
+.title {
+    font: 35px/130% 'Conv_pfdintextcondpro-regular', sans-serif;
+	color:#000;
+    margin-bottom: 30px;
+}
+
+.title.mar {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.categories {
+    overflow: hidden;
+    margin: 20px 0;
+    list-style-position: outside;
+	list-style: none;
+}
+
+.categories li {
+    float: left;
+    width: 23%;
+    margin-right: 2%;
+    text-align: center;
+    font: 16px/130% "AgoraSansProLight", sans-serif;
+	color:#000;
+}
+
+.categories li a {
+    display: block;
+    text-decoration: none;
+    font: 16px/130% "AgoraSansProLight", sans-serif;
+	color:#000;
+    border: 2px solid transparent;
+    padding: 5px 0;
+    border-radius: 10px;
+}
+
+.categories li a:hover {
+    background: #dfdfdf;
+    border: 2px solid #c7c7c7;
+    text-align: center;
+}
+
+.categories li .categories-pic {
+    display: table-cell;
+    width: 220px;
+    height: 220px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.advantages-block {
+    min-height: 676px;
+    padding: 30px 0;
+    background: url("../images/advantages-block_bg.jpg") no-repeat center 0;
+    background-size: cover;
+}
+
+.advantages-block .title {
+    font-size: 87px;
+    color: #fff;
+    margin: 110px 0 60px 0;
+    text-shadow: 0 0 5px #000;
+}
+
+.advantages {
+    overflow: hidden;
+    list-style-position: outside;
+	list-style: none;
+}
+
+.advantages li {
+    float: left;
+    width: 30%;
+    margin-left: 5%;
+    font: 17px/130% "AgoraSansProLight", sans-serif;
+	color:#fff;
+}
+
+.advantages li:first-child {
+    margin-left: 0;
+}
+
+.advantages-pic {
+    width: 162px;
+    height: 162px;
+    border: 8px solid #fccc26;
+    background: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 25px auto;
+    -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.4);
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.4);
+    font: 29px/110% 'Conv_pfdintextcondpro-regular', sans-serif;
+	color:#000;
+}
+
+.advantages-pic > span {
+    display: table-cell;
+    width: 162px;
+    height: 162px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.advantages-pic .font-s42 {font-size: 42px;}
+.advantages-pic .font-s25 {font-size: 25px;}
+.advantages-pic .font-s36 {font-size: 36px;}
+.advantages-pic .font-s45 {font-size: 45px;}
+
+.white-block {
+    background: #fff;
+    padding: 80px 0;
+}
+
+.over {
+    overflow: hidden;
+}
+
+.fl-left {
+    float: left;
+    width: 47%;
+    margin-right: 3%;
+}
+
+.fl-right {
+    float: right;
+    width: 47%;
+    margin-left: 3%;
+}
+
+.title-article {
+    font: 40px/130% 'Conv_pfdintextcondpro-regular', sans-serif;
+	color:#000;
+    margin-bottom: 20px;
+}
+
+.text {
+    font: 17px/150% "AgoraSansProLight", sans-serif;
+	color:#000;
+    margin-bottom: 30px;
+}
+
+.text p {
+    margin-bottom: 20px;
+}
+
+.subscribe p {
+    margin-bottom: 12px;
+}
+
+.subscribe input[type="text"] {
+    width: 292px;
+    height: 62px;
+    padding: 0 10px;
+    background: #fff;
+    border: none;
+    text-align: center;
+    font: 23px/62px "AgoraSansProLight", sans-serif;
+	color:#000;
+}
+
+.subscribe input[type="submit"] {
+    width: 250px;
+    height: 54px;
+    border: none;
+    border-top: 2px solid #5edddc;
+    background: #1ed0ce;
+    border-radius: 16px;
+    text-align: center;
+    font: 33px/130% 'Conv_pfdintextcondpro-regular', sans-serif;
+	color:#fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.subscribe input[type="submit"]:hover {
+    background: #3bd4d2;
+}
+
+.facabook-social {
+    margin: 20px 0;
+}
+
+.footer {
+	height: 130px;
+    padding-top: 8px;
+    background: #f2cc26;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+    right: 0;
+    font: 21px/130% "AgoraSansProLight", sans-serif;
+	color:#000;
+}
+
+.footer a {
+    color:#000;
+}
+
+.footer .fl-left {
+    margin-right: 0;
+}
+
+.copyright {
+    margin: 30px 0 5px 0;
+    font: 25px/130% 'Conv_pfdintextcondpro-regular', sans-serif;
+	color:#000;
+}
+
+.social {
+    background: #f2cc26;
+    text-align: center;
+    vertical-align: middle;
+    padding: 20px 0;
+}
+
+.social a {
+    display: inline-block;
+    zoom: 1;
+	*display: inline;
+	width: 36px;
+    height: 32px;
+    margin: 0 30px;
+}
+
+.social_1 {background: url("../images/sprite_1.png") no-repeat 0 -20px;}
+.social_2 {background: url("../images/sprite_1.png") no-repeat 0 -53px;}
+.social_3 {background: url("../images/sprite_1.png") no-repeat 0 -86px;}
+.social_4 {background: url("../images/sprite_1.png") no-repeat 0 -119px;}
+
+.slider-block {
+    float: left;
+    width: 65%;
+    margin-bottom: 100px;
+}
+
+#sync1 .item {
+    margin: 5px;
+    overflow: hidden;
+    text-align: center; 
+}
+
+#sync1 .item > div {
+    border: 1px solid #b8b8b8;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#sync1 .item img {
+    width: 100%;
+    margin-bottom: -4px;
+    
+}
+
+#sync2 .owl-wrapper-outer {
+    margin: 20px auto;
+}
+#sync2 .item{
+    text-align: center;
+    cursor: pointer;
+}
+
+#sync2 .item:hover {
+    opacity: 0.7;
+}
+
+#sync2 .item img {
+    border: 1px solid #b8b8b8;
+    border-radius: 10px;
+}
+
+.config-panel {
+    float: right;
+    width: 30%;
+    background: #fff;
+    border: 5px solid #fccc26;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 12px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.3);
+    margin: 12px 12px 12px 0;
+    overflow: hidden;
+}
+
+.title-config{
+    margin-bottom: 10px;
+    background: #f2f2f2;
+    padding: 5px 5%;
+    font: 23px/130% 'Conv_pfdintextcondpro-regular', sans-serif;
+	color:#000;
+}
+
+.select-size ul, .select-quantity ul {
+    list-style-position: outside;
+	list-style: none;
+    margin: 0 0 15px 5%;
+}
+
+.select-size ul li, .select-quantity ul li {
+    margin-bottom: 7px;
+    vertical-align: middle;
+    font: 15px/130% "AgoraSansProLight", sans-serif;
+	color:#404040;
+}
+
+.select-size ul li input[type="radio"], .select-quantity ul li input[type="radio"]{
+    display: inline-block;
+    zoom: 1;
+	*display: inline;
+	vertical-align: middle;
+    margin-top: 0;
+}
+
+.select-size ul li label, .select-quantity ul li label {
+    display: inline-block;
+    zoom: 1;
+	*display: inline;
+	vertical-align: middle;
+    font: 15px/130% "AgoraSansProLight", sans-serif;
+	color:#404040;
+    cursor: pointer;
+}
+
+.select-size ul li label span {
+    font-size: 13px;
+}
+
+.select-size ul li input[type="text"] {
+    display: inline-block;
+    zoom: 1;
+	*display: inline;
+	vertical-align: middle;
+    width: 45px;
+    height: 20px;
+    padding: 0 3px;
+    border: 1px solid #bababa;
+    border-radius: 2px;
+    text-align: center;
+    font: 13px/20px "AgoraSansProLight", sans-serif;
+	color:#404040;
+    margin: 0 2px;
+}
+
+.its-size {
+    display: none;
+}
+
+.its-size span {
+    font-size: 13px;
+    margin-right: 2px;
+}
+
+.select-size input:checked + label + .its-size {
+    display: inline-block;
+    zoom: 1;
+	*display: inline;
+}
+
+.select-quantity ul li label {
+    width: 22%;
+}
+
+.quantity-price {
+    display: inline-block;
+    zoom: 1;
+	*display: inline;
+	width: 28%;
+}
+
+.quantity-price span {
+    font-size: 13px;
+}
+
+.savings {
+    font: 13px/20px "AgoraSansProLight", sans-serif;
+	color:#e2650a;
+}
+
+.product-details-continue {
+    padding: 15px 8%;
+    text-align: center;
+    font: 16px/20px "AgoraSansProLight", sans-serif;
+	color:#656565;
+}
+
+.product-details-continue  a {
+    font: 16px/20px "AgoraSansProLight", sans-serif;
+	color:#656565;
+}
+
+.product-details-bottom {
+    display: block;
+    width: 100%;
+    height: 68px;
+    border: none;
+    border-top: 2px solid #93e9e8;
+    border-radius: 14px;
+    background: #1ed0ce;
+    cursor: pointer;
+    font: 33px/130% 'Conv_pfdintextcondpro-regular', sans-serif;
+	color:#fff;
+    margin-bottom: 8px;
+}
+
+.product-details-bottom:hover {
+    background: #35dfdd;
+}
+
+.cart-tovar {
+    float: left;
+    width: 620px;
+    margin: 30px 0;
+}
+
+.table-cart {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.table-cart tr {
+    border-bottom: 1px solid #b7b7b7;
+}
+
+.table-cart th, .table-cart td {
+    width: 21%;
+    padding: 5px 0;
+    vertical-align: middle;
+}
+
+.table-cart th:first-child, .table-cart td:first-child {
+    width: 54%;
+}
+
+.table-cart th:last-child, .table-cart td:last-child {
+    width: 4%;
+    text-align: right;
+}
+
+.table-cart th {
+    font: 15px/130% "AgoraSansProLight", sans-serif;
+	color:#000;
+}
+
+.cart-tovar-pic {
+    display: inline-block;
+    zoom: 1;
+	*display: inline;
+    width: 80px;
+    margin-right: 15px;
+}
+
+.cart-tovar-text, .cart-tovar-text a {
+    font: 15px/130% "AgoraSansProLight", sans-serif;
+	color:#000;
+}
+
+.cart-tovar-text {
+    display: inline-block;
+    zoom: 1;
+	*display: inline;
+    vertical-align: top;
+    margin-top: 10px;
+	
+}
+
+.table-cart input[type="text"] {
+    width: 55px;
+    height: 27px;
+    padding: 0 5px;
+    border: 1px solid #b4b4b4;
+    border-radius: 2px;
+    background: #fff;
+    text-align: center;
+    font: 17px/127px "AgoraSansProLight", sans-serif;
+	color:#000;
+}
+
+.cart-price {
+    font: 17px/130% "AgoraSansProLight", sans-serif;
+	color:#000;
+}
+
+.cart-del {
+    display: inline-block;
+    zoom: 1;
+	*display: inline;
+	width: 22px;
+    height: 22px;
+    background: url("../images/sprite_1.png") no-repeat 0 -152px;
+	vertical-align: middle;
+    cursor: pointer;
+}
+
+.price-block {
+    float: right;
+    width: 260px;
+    padding: 18px;
+    background: #fff;
+    border: 5px solid #fccc26;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 12px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.3);
+    margin: 30px 12px 30px 0;
+    text-align: center;
+}
+
+.price-block-text {
+    margin-bottom: 15px;
+    font: 15px/130% "AgoraSansProLight", sans-serif;
+	color:#000;
+}
+
+.price {
+    margin-bottom: 15px;
+    font: 34px/130% "AgoraSansProLight", sans-serif;
+	color:#000;
+}
+
+.price-block .product-details-continue, .price-block .product-details-continue a {
+    padding: 0;
+    font-size: 15px;
+}
+
+.last-form {
+    margin: 20px 0 50px 0;
+    font: 17px/130% "AgoraSansProLight", sans-serif;
+	color:#000;
+}
+
+.last-form p {
+    margin-bottom: 25px;
+}
+
+.last-form label {
+    display: block;
+    margin-bottom: 5px;
+    font: 17px/130% "AgoraSansProLight", sans-serif;
+	color:#000;
+}
+
+.last-form input[type="text"] {
+    width: 410px;
+    height: 38px;
+    padding: 0 8px;
+    background: #fff;
+    border: 1px solid #b4b4b4;
+    border-radius: 3px;
+    font: 17px/38px "AgoraSansProLight", sans-serif;
+	color:#000;
+}
+
+.last-form input.warning {
+    background: #ffcbcb;
+}
+
+.last-form textarea {
+    resize: none;
+    overflow: auto;
+    width: 410px;
+    height: 62px;
+    padding: 8px;
+    background: #fff;
+    border: 1px solid #b4b4b4;
+    border-radius: 3px;
+    font: 17px/130% "AgoraSansProLight", sans-serif;
+	color:#000;
+}
+
+.last-form input[type="submit"] {
+    width: 268px;
+    height: 68px;
+    border: none;
+    border-top: 2px solid #93e9e8;
+    background: #1ed0ce;
+    border-radius: 16px;
+    text-align: center;
+    font: 33px/130% 'Conv_pfdintextcondpro-regular', sans-serif;
+	color:#fff;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.last-form input[type="submit"]:hover {
+    background: #3bd4d2;
+}
+
+.right {
+    float: right;
+    margin: 30px 50px;
+}
+
+.text h3 {
+    font: 20px/130% 'Conv_pfdintextcondpro-regular', sans-serif;
+	color:#000;
+    margin-top: 30px;
+}
+
+.text a {
+    font: 17px/150% "AgoraSansProLight", sans-serif;
+	color:#000;
+}
+
+.title.center {
+    text-align: center;
+}
+
+.upload-block {
+    width: 560px;
+    min-height: 136px;
+    padding: 72px 78px 0 45px;
+    background: #e6e6e6;
+    border: 5px solid #fccc26;
+    border-radius: 15px;
+    margin: 20px auto;
+}
+
+.file-upload {
+    min-height: 55px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.file_input { 
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 158px;
+    z-index: 10;
+    opacity: 0;
+}
+
+.fake {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.fake-file {
+    width: 158px;
+    height: 50px;
+    padding: 0;
+    border: none;
+    background: #1ed0ce;
+    border-radius: 16px;
+    text-align: center;
+    font: 24px/130% 'Conv_pfdintextcondpro-regular', sans-serif;
+	color:#fff;
+    margin: 0 15px 0 0;
+    cursor: pointer;
+}
+
+.fake-file:hover {
+    background: #3bd4d2;
+}
+
+.fake input[type="text"] {
+    width: 350px;
+    height: 48px;
+    padding: 0 10px;
+    border: 1px solid #b2b2b2;
+    font: 15px/48px "AgoraSansProLight", sans-serif;
+	color:#000;
+    margin: 0;
+    border-radius: 2px;
+    vertical-align: top;
+}
+
+.fake-text {
+    text-align: right;
+    margin: 5px 0;
+    font: 15px/130% "AgoraSansProLight", sans-serif;
+	color:#929292;
+}
+
+
+.clear {
+	clear: both;
+}
